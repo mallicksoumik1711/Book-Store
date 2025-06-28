@@ -11,6 +11,10 @@ app.get('/', function(req, res){
     res.send("Hi");
 })
 
+app.get('/home', function(req, res){
+    res.send('Home Page');
+})
+
 app.get('/all-books', async function(req, res){
     let allBooks = await bookModel.find();
     res.send(allBooks);
