@@ -11,7 +11,7 @@ app.get('/', function(req, res){
     res.send("Hi");
 })
 
-app.get('/home', function(req, res){
+app.get('/home-page', function(req, res){
     res.send('Home Page');
 })
 
