@@ -15,6 +15,8 @@ app.get('/home-page', function(req, res){
     res.send('Home Page');
 })
 
+// from here all the routes are there
+
 app.get('/all-books', async function(req, res){
     let allBooks = await bookModel.find();
     res.send(allBooks);
