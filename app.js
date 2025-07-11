@@ -48,6 +48,7 @@ app.post('/book-post', async function(req, res){
 
 app.post('/book-reviews/:id', async function(req, res){
     let {bookReview, bookRating} = req.body;
+    // check before updating the books based onthe id
     let review = await bookReviewModel.create({
         bookReview,
         bookRating
