@@ -8,7 +8,7 @@ const bookModel = require('./models/book');
 const bookReviewModel = require('./models/bookreview');
 
 app.get('/', function(req, res){
-    res.send("Hi");
+    res.send("not checking continously");
 })
 
 app.get('/home-page', function(req, res){
